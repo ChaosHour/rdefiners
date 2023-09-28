@@ -27,11 +27,11 @@ pip install -r requirements.txt
 ```bash
 cat primary/test.sql | mysql --defaults-group-suffix=_primary1
 
-```bash
+```
 
 ### Validate the DB and tables with the Views, triggers, procedures, and functions
 
-```go
+```Go
 go-pvt -s 192.168.50.50 -d chaos
 Connected to 192.168.50.50 (114f42533e88): ✔
 
