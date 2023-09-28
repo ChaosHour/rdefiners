@@ -31,6 +31,8 @@ cat primary/test.sql | mysql --defaults-group-suffix=_primary1
 
 ### Validate the DB and tables with the Views, triggers, procedures, and functions
 
+[go-pvt](https://github.com/ChaosHour/go-pvt)
+
 ```Go
 go-pvt -s 192.168.50.50 -d chaos
 Connected to 192.168.50.50 (114f42533e88): ✔
