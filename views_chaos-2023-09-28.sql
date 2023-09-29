@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS chaos.my_view; CREATE OR REPLACE DEFINER = `flyway`@`%` VIEW chaos.my_view AS select `chaos`.`my_table`.`col1` AS `col1`,`chaos`.`my_table`.`col2` AS `col2` from `chaos`.`my_table` where (`chaos`.`my_table`.`col1` > 0); 
+DROP TABLE IF EXISTS chaos.my_view2; CREATE OR REPLACE DEFINER = `flyway`@`%` VIEW chaos.my_view2 AS select `chaos`.`my_table`.`col1` AS `col1`,`chaos`.`my_table`.`col2` AS `col2` from `chaos`.`my_table` where (`chaos`.`my_table`.`col1` > 0); 
