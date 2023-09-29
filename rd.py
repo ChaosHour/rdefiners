@@ -111,7 +111,9 @@ for database in valid_databases:
         output_file.write(output_data)
 
     # Print a message indicating that the definer has been renamed
-    print(f"All objects with definer '{source_definer}' have been renamed to '{replacement_definer}' in database '{database}'")
+    #print(f"All objects with definer '{source_definer}' have been renamed to '{replacement_definer}' in database '{database}'")
+    print(f"All objects have been renamed to '{replacement_definer}' in database '{database}'")
+
 
     # Define the name of the output SQL file for the stored procedures, triggers, and events
     output_file_name = f"{database}_dump-fixed.sql"
