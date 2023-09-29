@@ -47,7 +47,7 @@ DELIMITER ;;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;;
 /*!50003 SET @saved_time_zone      = @@time_zone */ ;;
 /*!50003 SET time_zone             = 'SYSTEM' */ ;;
-/*!50106 CREATE*/ /*!50117 DEFINER=`flyway`@`%`*/ /*!50106 EVENT `my_event` ON SCHEDULE EVERY 1 HOUR STARTS '2023-09-29 04:43:00' ON COMPLETION NOT PRESERVE ENABLE DO INSERT INTO my_table (col1, col2)
+/*!50106 CREATE*/ /*!50117 DEFINER=`flyway`@`%`*/ /*!50106 EVENT `my_event` ON SCHEDULE EVERY 1 HOUR STARTS '2023-09-29 04:53:35' ON COMPLETION NOT PRESERVE ENABLE DO INSERT INTO my_table (col1, col2)
 VALUES (1, 2) */ ;;
 /*!50003 SET time_zone             = @saved_time_zone */ ;;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;;
@@ -89,4 +89,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-09-28 21:43:19
+-- Dump completed on 2023-09-28 21:57:10

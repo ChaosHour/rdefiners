@@ -13,7 +13,8 @@ import glob
 my_cnf_path = os.path.expanduser('~/.my.cnf')
 
 # Set the command line arguments
-source_definer = '`root`@`%`'
+source_definer = '`[^`]+`@`[^`]+`'
+#source_definer = '`root`@`%`'
 replacement_definer = '`flyway`@`%`'
 excluded_databases = ['mysql', 'information_schema', 'performance_schema', 'sys']
 defaults_group_suffix = '_primary1'
@@ -94,7 +95,8 @@ for database in valid_databases:
         backup_file.write(sql_file.read())
 
     # Define the regular expression pattern to match the source definer
-    definer_pattern = re.compile(re.escape(source_definer))
+    #definer_pattern = re.compile(re.escape(source_definer))
+    definer_pattern = re.compile(source_definer)
 
     # Read the input MySQL dump file
     with open(input_file, "r") as f:
