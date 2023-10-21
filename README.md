@@ -89,5 +89,23 @@ set_default_salary	(TRIGGER)  	flyway@%
 my_event          	(EVENT)    	flyway@%	
 ```
 
+## Added. refactored and tested rd2.py
+
+```python
+❯ ./rd2.py
+['chaos']
+User 'flyway' exists in database 'chaos'
+All objects have been renamed to '`flyway`@`%`' in database 'chaos'
+Output file path: /Users/KLarsen/projects/python_code/rdefiners/chaos_dump-fixed.sql
+Views file path: views_chaos-2023-10-20.sql
+Database objects from 'chaos' have been restored from '/Users/KLarsen/projects/python_code/rdefiners/chaos_dump-fixed.sql'
+Database objects from 'chaos' have been restored from 'views_chaos-2023-10-20.sql'
+```
+## Reason
+```bash
+""" UPDATE: 2023-10-20 in a more Pythonic way 
+ChaosHour - Kurt Larsen
+"""
+```
 
 Read the README.md in the project mysql8-docker for more information on how to use the docker container.
