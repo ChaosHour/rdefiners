@@ -1,5 +1,5 @@
 ansible==12.2.0
-ansible-core==2.17.7
+ansible-core==2.18.18rc1
 astroid==2.15.7
 black==24.3.0
 certifi==2024.7.4
