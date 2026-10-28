@@ -1,7 +1,7 @@
 ansible==12.2.0
 ansible-core==2.18.18rc1
 astroid==2.15.7
-black==24.3.0
+black==26.10.1
 certifi==2026.10.19
 cffi==1.15.1
 charset-normalizer==3.2.0
